@@ -13,9 +13,8 @@ Proyecto de ejemplo para detección de **objetos**, **texto (OCR)** y **coincide
 ### 🛠️ Instalación
 
 ```bash
-git clone https://github.com/tuusuario/vision_project.git
-cd vision_project
-python -m venv venv
+git clone 
+python -m venv objenv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -25,7 +24,7 @@ pip install -r requirements.txt
 ## 📁 Estructura del Proyecto
 
 ```
-vision_project/
+name_project/
 │
 ├── main.py                 # Script principal de prueba
 ├── object_detector.py      # Detección de objetos con YOLOv8
@@ -51,7 +50,7 @@ python object_detector.py
 Por defecto usa una imagen (`assets/test_image.jpg`), pero puedes activar el uso de cámara o video editando:
 
 ```python
-# object_detector.py
+# object_detector_cam.py
 detect_objects_from_camera()                # Usa cámara
 # detect_objects_from_camera("assets/video.mp4")  # Usa video
 ```
