@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  detector_ai:
+    build: .
+    container_name: detector_ai
+    volumes:
+      - ./assets:/app/assets
+      - ./runs:/app/runs
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
+    # Descomentar si necesitas acceso a la cámara (Linux):
+    # devices:
+    #   - /dev/video0:/dev/video0
